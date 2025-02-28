@@ -1,3 +1,12 @@
+var sidebar = document.querySelector('.side-navbar')
+
+function showsidenavbar(){
+  sidebar.style.display="block"
+}
+function hidenavbar(){
+  sidebar.style.display="none"
+}
+
 // Slideshow Functionality
 let slideIndex = 1;
 showSlides(slideIndex);

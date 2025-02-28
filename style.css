@@ -13,7 +13,7 @@ body {
     
     align-items: center;
     padding: 20px;
-    background-color: #005F60; /* Peacock teal */
+    background:linear-gradient(to right,#f8b280, #008080, #228B22); /* Peacock teal */
     color: white;
   }
   header span{
@@ -53,6 +53,12 @@ body {
   .cart-icon {
     font-size: 24px;
     color: #FFD700; /* Gold accent */
+  }
+  .bar{
+    display: none;
+  }
+  .side-navbar{
+    display: none;
   }
   
   /* Hero Section */
@@ -323,25 +329,77 @@ body {
   }
   /* Responsive Styles */
 @media (max-width: 1024px) {
-  header {
-    flex-direction: column;
-    align-items: center;
+  header ul ,.cart-icon{
+    display: none;
+  }
+  .bar{
+    display: block;
+    margin-left:350px;
+  }
+  .side-navbar{
+    background-color: #008080;
+    position: relative;
+    width: 180px;
+    height: 260px;
+    left: 350px;
+    font-size: 20px;
+    bottom: 550px;
+    z-index: 10;
+    display: none;
+  }
+  .side-navbar li {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
     text-align: center;
+   
   }
-  
-  nav ul {
-    margin-left: 0;
-    flex-direction: column;
-    gap: 10px;
+  .side-navbar a{
+    text-decoration: none;
+    color: white;
   }
-  
+  .side-navbar a:hover{
+    color: #FFD700;
+  }
   .cart-icon {
     margin-left: 0;
     margin-top: 10px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
+  header ul ,.cart-icon{
+    display: none;
+  }
+  .bar{
+    display: block;
+    margin-left:240px;
+  }
+  .side-navbar{
+    background-color: #008080;
+    position: relative;
+    width: 150px;
+    height: 260px;
+    left: 300px;
+    font-size: 16px;
+    bottom: 350px;
+    z-index: 10;
+    display: none;
+  }
+  .side-navbar li {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+   
+  }
+  .side-navbar a{
+    text-decoration: none;
+    color: white;
+  }
+  .side-navbar a:hover{
+    color: #FFD700;
+  }
   .hero {
     padding: 100px 20px;
   }
@@ -371,9 +429,51 @@ body {
   .about-content {
     flex-direction: column;
   }
+  
+  .buttons a{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+
+  }
 }
 
 @media (max-width: 480px) {
+  header ul ,.cart-icon{
+    display: none;
+  }
+  .bar{
+    display: block;
+    margin-left:180px;
+  }
+  .side-navbar{
+    background-color: #008080;
+    position: relative;
+    width: 150px;
+    height: 250px;
+    left: 240px;
+    font-size: 16px;
+    bottom: 300px;
+    z-index: 10;
+    display: none;
+  }
+  .side-navbar li {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+   
+  }
+  .side-navbar a{
+    text-decoration: none;
+    color: white;
+  }
+  .side-navbar a:hover{
+    color: #FFD700;
+  }
   header {
     padding: 10px;
   }
@@ -396,9 +496,10 @@ body {
   }
 
   .btn {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 14px;
   }
+  
 
   .footer-links, .social-media, .whatsapp-contact {
     flex-direction: column;

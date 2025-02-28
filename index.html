@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bamini&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
@@ -25,6 +26,8 @@
       </ul>
     </nav>
     <div class="cart-icon">🛒</div>
+    <div class="bar" style="font-size: 24px;" onclick="showsidenavbar()">
+      <i class="fa-solid fa-bars"></i>
   </header>
 
   <!-- Hero Section -->
@@ -33,10 +36,21 @@
       <h1>மண் மயில் - பாரம்பரிய கலைவளத்தின் அரும்பு</h1>
       <p>MannMayil – The Bloom of Traditional Art</p>
       <div class="buttons">
-        <a href="shop.html" class="btn">Shop Now</a>
-        <a href="gallery.html" class="btn">Explore Our Art</a>
+        <a href="shop.html" class="btn"><i class="fa-solid fa-shop" style="font-size: 20px;"></i>&nbsp;Shop Now</a>
+        <a href="gallery.html" class="btn"><i class="fa-solid fa-masks-theater" style="font-size: 20px;"></i>Explore Our Art</a>
       </div>
     </div>
+  </div>
+  <div class="side-navbar"onclick="hidenavbar()">
+    <i class="fa-solid fa-xmark"></i>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
   </section>
 
   <!-- Featured Products -->
@@ -59,7 +73,7 @@
         <img src="images/vessel1.jpg" alt="Clay Vessel">
         <h3>Clay Vessel</h3>
         <p>Timeless elegance, everyday utility</p>
-        <button>Vist Now</button>
+        <button>Visit Now</button>
       </div>
     </div>
   </section>
